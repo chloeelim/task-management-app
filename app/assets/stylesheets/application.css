@@ -1,0 +1,170 @@
+.bg_primary-color {
+    background-color: #FFFFFF;
+  }
+  .primary-color {
+    background-color: #FFFFFF;
+  }
+  .bg_secondary-color {
+    background-color: #293241;
+  }
+  .secondary-color {
+    color: #293241;
+  }
+  .custom-button.btn {
+    background-color: #293241;
+    color: #FFF;
+    border: none;
+  }
+  .custom-button.btn:hover {
+    color: #FFF !important;
+    border: none;
+  }
+  .hero {
+    width: 100vw;
+    height: 50vh;
+  }
+  .hero img {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+  }
+
+  .banner {
+    padding: 5em 2em 3em 2em;
+    text-align: center;
+    align-items: center;
+  }
+
+  .banner-description {
+    color: gray;
+  }
+
+  .largeCheckbox {
+    width: 2em;
+    height: 2em;
+  }
+
+  .login {
+    padding: 3rem 2rem;
+  }
+
+  .quickSubjectOverview {
+    padding: 2em;
+    border-radius: 2em;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 25rem;
+    margin-bottom: 3rem;
+  }
+
+  .dot {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5em;
+  }
+
+  .taskCompletionTick .taskCompletedTick {
+    margin-left: 1em;
+  }
+
+  .taskCompletionTick:hover {
+    background-color: green!important;
+  }
+
+  .taskCompletedTick:hover {
+    background-color: grey!important;
+  }
+  
+  .overdueTask {
+    color: black;
+    background-color:mistyrose!important;
+  }
+
+  .searchbar {
+    margin: 3rem 1.5rem 1rem 1.5rem;
+  }
+
+  .filterOverdueBadge {
+    margin: 1rem;
+  }
+
+  .filterImportantBadge {
+    margin: 1rem;
+  }
+
+  .filterFlagBadge {
+    margin: 1rem;
+  }
+
+  .filterRestBadge {
+    margin: 1rem;
+  }
+
+  .filterOverdueBadge:hover {
+    background-color: rgb(220, 53, 69)!important;
+  }
+
+  .filterImportantBadge:hover {
+    background-color: rgb(255, 193, 7)!important;
+  }
+
+  .filterFlagBadge:hover {
+    background-color: rgb(13, 110, 253)!important;
+  }
+
+  .filterRestBadge:hover {
+    background-color: rgb(13,202,240)!important;
+  }
+
+  .welcomeHeader {
+    margin-top: 2rem!important;
+    margin-bottom: 2rem!important;
+    display: flex;
+    justify-content: center;
+    color: dodgerblue;
+  }
+
+  .subjectHeader {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .submitFormButton {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .dashboardForm {
+    margin: 3rem;
+  }
+
+  .SubjectPage {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .SubjectPageBody {
+    padding-left: 3rem!important;
+    padding-right: 3rem!important;
+    margin-bottom: 2rem;
+  }
+
+  .SubjectViewBanner {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .ProgressBar {
+    margin: 1rem 1rem 2rem 1rem;
+  }
