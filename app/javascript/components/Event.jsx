@@ -229,8 +229,8 @@ function Event() {
                     <p className="text-muted">{event.description}</p>
                     <p style={{marginBottom: 0}}><strong>Event status: </strong>{calcStatus(event.start_date, event.end_date)}</p>
                     {subject ? subjectTitle() : null}
-                    <p style={{marginBottom: 0}}><strong>Event start date: </strong> {new Date(event.start_date).toLocaleDateString()}</p>
-                    <p style={{marginBottom: 0}}><strong>Event end date: </strong>{event.end_date ? new Date(event.end_date).toLocaleDateString() : "Not specified"}</p>
+                    <p style={{marginBottom: 0}}><strong>Event start date: </strong> {new Date(event.start_date).toLocaleString()}</p>
+                    <p style={{marginBottom: 0}}><strong>Event end date: </strong>{event.end_date ? new Date(event.end_date).toLocaleString() : "Not specified"}</p>
                 </Row>
                 <Accordion>
                     <Accordion.Item eventKey="0">
