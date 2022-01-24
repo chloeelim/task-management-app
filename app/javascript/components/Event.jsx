@@ -14,7 +14,7 @@ function Event() {
     useEffect(() => getEvent(), []);
 
     const getEvent = () => {
-        fetch(`http://localhost:3000/dashboard/events/${event_id}`)
+        fetch(`/dashboard/events/${event_id}`)
         .then(response => response.json())
         .then(response => {
             console.log(response)
@@ -46,7 +46,7 @@ function Event() {
     
     const updateEvent = (event) => {
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        fetch(`http://localhost:3000/new_event/${event_id}`, {
+        fetch(`/new_event/${event_id}`, {
             method: "PATCH",
             body: JSON.stringify(event),
             headers: {
@@ -101,7 +101,7 @@ function Event() {
 
     const deleteEvent = () => {
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        fetch(`http://localhost:3000/delete_event/${event_id}`, {
+        fetch(`/delete_event/${event_id}`, {
             method: "DELETE",
             headers: {
                 "X-CSRF-Token": token,

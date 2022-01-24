@@ -14,7 +14,7 @@ function Task() {
     useEffect(() => getTask(), []);
 
     const getTask = () => {
-        fetch(`http://localhost:3000/dashboard/tasks/${task_id}`)
+        fetch(`/dashboard/tasks/${task_id}`)
         .then(response => response.json())
         .then(response => {
             console.log(response)
@@ -50,7 +50,7 @@ function Task() {
     
     const deleteTask = () => {
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        fetch(`http://localhost:3000/delete_task/${task_id}`, {
+        fetch(`/delete_task/${task_id}`, {
         method: "DELETE",
         headers: {
             "X-CSRF-Token": token,
@@ -160,7 +160,7 @@ function Task() {
     const changeTaskCompletion = (complete, task_id) => {
         const task = {task_id, completed: complete};
         const token = document.querySelector('meta[name="csrf-token"]').content;
-            fetch(`http://localhost:3000/update_task/${task_id}`, {
+            fetch(`/update_task/${task_id}`, {
                 method: "PATCH",
                 body: JSON.stringify(task),
                 headers: {

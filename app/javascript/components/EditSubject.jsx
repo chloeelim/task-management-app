@@ -63,7 +63,7 @@ function EditSubject({ user_id, subject_presets, onSubmit, subject_events, reque
             event.subject_id = subject_id;
             event.user_id = user_id;
             const token = document.querySelector('meta[name="csrf-token"]').content;
-            fetch("http://localhost:3000/new_event", {
+            fetch("/new_event", {
                 method: "POST",
                 body: JSON.stringify(event),
                 headers: {

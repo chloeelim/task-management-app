@@ -20,7 +20,7 @@ function App() {
     useEffect(() => handleLoginStatus(), []);
 
     function handleLoginStatus() {
-        fetch("http://localhost:3000/logged_in", {
+        fetch("/logged_in", {
             method: "GET",
             // allows Rails to set cookie
             credentials: "include"

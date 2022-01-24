@@ -105,7 +105,7 @@ function TaskOverview({allTasks, subjects, searchParams}) {
     const changeTaskCompletion = (complete, task_id) => {
         const task = {task_id, completed: complete};
         const token = document.querySelector('meta[name="csrf-token"]').content;
-            fetch(`http://localhost:3000/update_task/${task_id}`, {
+            fetch(`/update_task/${task_id}`, {
                 method: "PATCH",
                 body: JSON.stringify(task),
                 headers: {

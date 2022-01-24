@@ -52,7 +52,7 @@ function Login({ handleSubmit, loginStatus }) {
         });
         // request will be mapped to the create action of the session controller (attempts to create a session)
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        fetch("http://localhost:3000/login", {
+        fetch("/login", {
             method: "POST",
             body: JSON.stringify({user}),
             headers: {

@@ -5,7 +5,7 @@ import EditSubject from "./EditSubject";
 function UpdateSubject({ user_id, subject_presets, subject_events }) {
     const onSubmit = (subject) => {
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        return fetch("http://localhost:3000/new_subject", {
+        return fetch("/new_subject", {
                 method: "POST",
                 body: JSON.stringify(subject),
                 headers: {

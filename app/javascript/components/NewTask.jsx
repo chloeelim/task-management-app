@@ -16,7 +16,7 @@ function NewTask({ userData, subjects }) {
 
     const handleSubmit = (body) => {
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        fetch("http://localhost:3000/new_task", {
+        fetch("/new_task", {
             method: "POST",
             body: body,
             headers: {

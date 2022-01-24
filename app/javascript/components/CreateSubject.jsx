@@ -115,7 +115,7 @@ function CreateSubject({ user_id }) {
         };
         const token = document.querySelector('meta[name="csrf-token"]').content;
         
-        fetch("http://localhost:3000/new_subject", {
+        fetch("/new_subject", {
                 method: "POST",
                 body: JSON.stringify({subject}),
                 headers: {
@@ -166,7 +166,7 @@ function CreateSubject({ user_id }) {
             user_id: user_id
         }
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        fetch("http://localhost:3000/new_event", {
+        fetch("/new_event", {
             method: "POST",
             body: JSON.stringify({event}),
             headers: {

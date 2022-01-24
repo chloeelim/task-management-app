@@ -8,7 +8,7 @@ function UpdateTask({ task, subjects }) {
 
     const handleSubmit = (body) => {
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        fetch(`http://localhost:3000/update_task/${task.id}`, {
+        fetch(`/update_task/${task.id}`, {
             method: "PATCH",
             body: body,
             headers: {

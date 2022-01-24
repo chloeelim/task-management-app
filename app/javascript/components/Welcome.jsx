@@ -10,7 +10,7 @@ function Welcome({ loginStatus, handleLogout, user, handleSubmit }) {
     const onLogout = () => {
         // log the user out on the back-end by clearing session
         // calls the delete action of the sessions controller
-        fetch('http://localhost:3000/logout', {
+        fetch('/logout', {
             method: "DELETE",
             credentials: "include"
         })

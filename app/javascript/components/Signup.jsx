@@ -30,7 +30,7 @@ function Signup({ handleSubmit }) {
         
         // request will be mapped to the create action of the users controller
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        fetch("http://localhost:3000/users", {
+        fetch("/users", {
             method: "POST",
             body: JSON.stringify({user}),
             headers: {

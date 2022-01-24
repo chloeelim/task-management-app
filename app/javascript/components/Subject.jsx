@@ -14,7 +14,7 @@ function Subject() {
     useEffect(() => getSubject(), []);
 
     const getSubject = () => {
-        fetch(`http://localhost:3000/dashboard/subjects/${subject_id}`)
+        fetch(`dashboard/subjects/${subject_id}`)
         .then(response => response.json())
         .then(response => {
             console.log(response)
@@ -59,7 +59,7 @@ function Subject() {
     
     const deleteSubject = () => {
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        fetch(`http://localhost:3000/delete_subject/${subject_id}`, {
+        fetch(`/delete_subject/${subject_id}`, {
             method: "DELETE",
             headers: {
                 "X-CSRF-Token": token,
@@ -109,7 +109,7 @@ function Subject() {
 
     const onSubmit = (subject) => {
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        return fetch(`http://localhost:3000/new_subject/${subject_id}`, {
+        return fetch(`/new_subject/${subject_id}`, {
                 method: "PATCH",
                 body: JSON.stringify(subject),
                 headers: {

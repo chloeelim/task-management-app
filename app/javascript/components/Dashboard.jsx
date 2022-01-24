@@ -22,7 +22,7 @@ function Dashboard({ loginStatus, user }) {
     useEffect(() => requestUserData(), []);
 
     const requestUserData = () => {
-        fetch("http://localhost:3000/user_data", {
+        fetch("/user_data", {
             method: "GET",
             credentials: "include"
         })
@@ -109,7 +109,7 @@ function Dashboard({ loginStatus, user }) {
 
     const handleEventSubmit = (event) => {
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        fetch("http://localhost:3000/new_event", {
+        fetch("/new_event", {
             method: "POST",
             body: JSON.stringify(event),
             headers: {
