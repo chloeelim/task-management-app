@@ -14,7 +14,7 @@ function Subject() {
     useEffect(() => getSubject(), []);
 
     const getSubject = () => {
-        fetch(`dashboard/subjects/${subject_id}`)
+        fetch(`/dashboard/subjects/${subject_id}`)
         .then(response => response.json())
         .then(response => {
             console.log(response)
