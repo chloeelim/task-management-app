@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
-import { Link, useNavigate, useParams } from 'react-router-dom'
-import { Container, Row, Accordion, Table, Form, Button, Col, Badge } from "react-bootstrap";
+import { useNavigate, useParams } from 'react-router-dom'
+import { Container, Row, Accordion, Col } from "react-bootstrap";
 import Swal from "sweetalert2";
 import EventForm from "./EventForm";
 

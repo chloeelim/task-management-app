@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
     skip_before_action :verify_authenticity_token
-    helper_method :login!, :logged_in?, :curr_user, :authorized_user?, :logout!
+    helper_method :login!, :logged_in?, :curr_user, :logout!
 
     def index
     end
@@ -24,10 +24,6 @@ class ApplicationController < ActionController::Base
         # puts "user: #{User.find(session[:user_id])}"
         # puts "curr user: #{@curr_user}"
     end
-
-    def authorized_user?
-        @user == curr_user
-     end
      
     def logout!
         session.clear

@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
-import { Link, useNavigate } from 'react-router-dom'
+import React from "react";
+import { useNavigate } from 'react-router-dom'
 import Typewriter from 'typewriter-effect';
-import { Container, Row, Form, Button, Col } from "react-bootstrap";
-import Login from "./Login";
+import { Container, Row } from "react-bootstrap";
 
 function Welcome({ loginStatus, handleLogout, user, handleSubmit }) {
     let navigate = useNavigate();

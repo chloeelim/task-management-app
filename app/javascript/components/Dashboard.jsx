@@ -1,6 +1,6 @@
 import React, { useEffect, useState }  from "react";
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
-import { Container, Row, Accordion, ProgressBar, Form, Button, Col } from "react-bootstrap";
+import { Container, Row, Accordion, ProgressBar } from "react-bootstrap";
 import SubjectOverview from "./SubjectOverview";
 import NewTask from "./NewTask";
 import TaskOverview from "./TaskOverview";

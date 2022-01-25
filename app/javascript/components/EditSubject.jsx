@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Navigate, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import { Form, Container, Row, Col, Button } from 'react-bootstrap';
 import Swal from "sweetalert2";
 import EventForm from "./EventForm";

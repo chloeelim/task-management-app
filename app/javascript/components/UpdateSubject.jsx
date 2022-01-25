@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router";
+import React from "react";
 import EditSubject from "./EditSubject";
 
 function UpdateSubject({ user_id, subject_presets, subject_events }) {

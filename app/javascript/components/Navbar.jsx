@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from 'react-router-dom';
-import { Navbar, Nav, Container, Form, Button } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 
 function NavBar({ loginStatus, user, handleLogout }) {
     let navigate = useNavigate();

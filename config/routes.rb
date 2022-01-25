@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get '/dashboard/events/:event_id', to: 'events#show'
   get '/*path' => 'welcome#index'
   
-  resources :users, only: [:create, :show, :index]
+  resources :users, only: [:create]
   # creates the routes:
   # post '/users', to: 'users#create'
   # get '/users/:user_id', to: 'users#show'

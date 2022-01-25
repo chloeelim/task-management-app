@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Form, Container, Row, Col, Button } from 'react-bootstrap';
-import Swal from "sweetalert2";
 
 function EventForm({ user_id, handleSubmit, event_presets, subjects }) {
     const [date, setDate] =  useState(event_presets ? event_presets.start_date.slice(0,23) : "");

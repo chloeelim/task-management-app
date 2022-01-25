@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
-import { Container, Row, Table, ListGroup, Form, Button, Col } from "react-bootstrap";
+import { Container, Row, Table } from "react-bootstrap";
 
 function EventOverview({ events, subjects }) {
     let navigate = useNavigate();

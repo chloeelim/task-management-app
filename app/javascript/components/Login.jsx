@@ -1,6 +1,6 @@
 import React, { useEffect, useState }  from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Form, Container, Row, Col, Button } from 'react-bootstrap';
+import { Form, Container, Row, Button } from 'react-bootstrap';
 import Swal from 'sweetalert2'
 
 function Login({ handleSubmit, loginStatus }) {
