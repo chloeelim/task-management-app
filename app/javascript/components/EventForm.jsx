@@ -42,7 +42,6 @@ function EventForm({ user_id, handleSubmit, event_presets, subjects }) {
                 user_id: user_id
             };
             if(subjects) {event.subject_id = eventSubject;}
-            console.log(event);
             setDate("");
             setDateEnd("");
             setEventName("");
@@ -104,7 +103,6 @@ function EventForm({ user_id, handleSubmit, event_presets, subjects }) {
                         <Form.Group>
                             <Form.Label htmlFor="eventName">Event Title:</Form.Label>
                             <Form.Control type="text" name="eventName" id="eventName" onChange={onEventNameChange} value={eventName}/>
-                            {console.log(eventName)}
                         </Form.Group>
                         {
                             subjects

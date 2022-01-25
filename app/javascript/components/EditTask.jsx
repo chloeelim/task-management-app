@@ -39,10 +39,8 @@ function EditTask({ user_id, task_presets, subjects, handleSubmit }) {
         // check for valid date
         const d = Date.parse(deadline);
         if(!isNaN(d)) {
-            console.log(d);
             const subject_id = (subjectId === "Unfiled" || !subjectId) ? null : subjectId; 
             const task = { title, description, deadline, subject_id, priority, completed, user_id };
-            console.log(task);
             handleSubmit(JSON.stringify({task}));
         } else {
             Swal.fire({

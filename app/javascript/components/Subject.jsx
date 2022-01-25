@@ -16,7 +16,6 @@ function Subject() {
         fetch(`/dashboard/subjects/${subject_id}`)
         .then(response => response.json())
         .then(response => {
-            console.log(response)
             if(response.subject_found){
                 setSubject(response.subject);
                 setEvents(response.events);

@@ -24,7 +24,6 @@ function EditSubject({ user_id, subject_presets, onSubmit, subject_events, reque
     }
 
     const addNewEvent = (event) => {
-        console.log(event);
         const new_arr = [...events, event];
         setEvents(new_arr);
     }
@@ -36,7 +35,6 @@ function EditSubject({ user_id, subject_presets, onSubmit, subject_events, reque
         .then(response => response.json())
         .then(response => {
             if(response.successful || response.subject_created) {
-                console.log(response.subject_id);
                 submitAllEvents(response.subject_id);
             } else {
                 let timerInterval;
@@ -56,9 +54,7 @@ function EditSubject({ user_id, subject_presets, onSubmit, subject_events, reque
     }
 
     const submitAllEvents = (subject_id) => {
-        console.log(subject_id);
         const new_events = events.filter(x => !subject_events.includes(x));
-        console.log(new_events);
         new_events.map((event) => {
             event.subject_id = subject_id;
             event.user_id = user_id;

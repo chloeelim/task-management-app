@@ -6,7 +6,6 @@ function NavBar({ loginStatus, user, handleLogout }) {
     let navigate = useNavigate();
 
     const logoutButton = () => {
-        console.log("logout");
         return(
             <Button onClick={onLogout} variant="light">Log out</Button>
         );

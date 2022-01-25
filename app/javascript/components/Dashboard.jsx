@@ -28,7 +28,6 @@ function Dashboard({ loginStatus, user }) {
         })
         .then(response => response.json())
         .then(response => {
-            console.log(response);
             if(response.logged_in) {
                 setUserData(response.user);
                 setTasks(response.tasks);

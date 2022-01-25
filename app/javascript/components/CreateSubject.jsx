@@ -76,7 +76,6 @@ function CreateSubject({ user_id }) {
 
     const calculateExamStartDate = (moduleExamDate) => {
         if(moduleExamDate) {
-            console.log(moduleExamDate);
             const d = new Date(moduleExamDate);
             const YYYY = d.getFullYear().toString();
             const MM = d.getMonth() < 9 ? "0" + (d.getMonth() + 1).toString() : (d.getMonth() + 1).toString();
@@ -93,7 +92,6 @@ function CreateSubject({ user_id }) {
         if(s && dur) {
             const sd = new Date(s);
             sd.setMinutes(sd.getMinutes() + dur);
-            console.log(sd.toLocaleString());
             return sd.toISOString();
         } else {
             return undefined;
